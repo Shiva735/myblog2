@@ -1,20 +1,16 @@
-package com.demo.demo2.entity;
+package com.demo.demo2.payload;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-@Table (name= "posts")
-@Entity
-@Data   //it work as getters and setters
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class post {
+public class PostDto {
 
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private long id;
 
     private String title;
